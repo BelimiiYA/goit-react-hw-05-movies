@@ -1,4 +1,4 @@
-import { Form, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { fetchActors } from 'services/TmbdApi';
 import Loader from 'components/Loader/Loader';
@@ -40,7 +40,7 @@ const Cast = () => {
               src={
                 profile_path
                   ? `https://image.tmdb.org/t/p/w500${profile_path}`
-                  : `https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg`
+                  : `https://www.millergerrard.com/propertyuploads/video/novideo.jpg`
               }
               alt={original_name}
             />
