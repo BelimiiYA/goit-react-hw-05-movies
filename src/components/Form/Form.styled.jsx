@@ -9,16 +9,16 @@ export const Input = styled.input`
   font: inherit;
   cursor: pointer;
   border-radius: 4px;
-  border: 3px solid #021C1E;
+  border: 3px solid #021c1e;
   font-weight: 600;
   font-size: 20px;
   margin-right: 10px;
-  border-radius: 4px 8px;
+  border-radius: 24px 8px;
   outline: none;
 
   &:hover {
-    color: #6FB98F;
-    border: 3px solid #6FB98F;
+    color: #6fb98f;
+    border: 3px solid #6fb98f;
   }
 `;
 
@@ -27,14 +27,14 @@ export const Button = styled.button`
   font: inherit;
   cursor: pointer;
   border-radius: 4px;
-  border: 3px solid #021C1E;
-  color: #021C1E;
+  border: 3px solid #021c1e;
+  color: #021c1e;
   font-weight: 600;
   font-size: 20px;
-  border-radius: 4px 8px;
+  border-radius: 24px 8px;
 
   &:hover {
-    color: #6FB98F;
-    border: 3px solid #6FB98F;
+    color: #6fb98f;
+    border: 3px solid #6fb98f;
   }
 `;
