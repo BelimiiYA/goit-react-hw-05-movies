@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
+
 export const SearchForm = styled.form`
+  margin-left: 235px;
   display: flex;
   align-items: center;
 `;
@@ -17,12 +19,12 @@ export const Input = styled.input`
   outline: none;
 
   &:hover {
-    color: #6fb98f;
-    border: 3px solid #6fb98f;
+    color: #686868;
+    border: 3px solid #686868;
   }
 `;
 
-export const Button = styled.button`
+export const SearchButton = styled.button`
   padding: 12px 12px;
   font: inherit;
   cursor: pointer;
@@ -34,7 +36,14 @@ export const Button = styled.button`
   border-radius: 24px 8px;
 
   &:hover {
-    color: #6fb98f;
-    border: 3px solid #6fb98f;
+    color: #686868;
+    border: 3px solid #686868;
   }
+`;
+export const Label = styled.span`
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font: inherit;
+  font-size: 20px;
 `;

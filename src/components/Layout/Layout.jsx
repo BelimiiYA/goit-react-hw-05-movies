@@ -1,23 +1,27 @@
+import { StyledNavLink, Container, Header } from './Layout.styled';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import Loader from 'components/Loader/Loader';
-import { Container, Header, Link } from './Layout.styled';
+import { GlobalStyle, theme } from 'components/GlobalStyle';
+import { ToastContainer } from 'react-toastify';
+import  Loader  from 'components/Loader/Loader';
+import { ThemeProvider } from 'styled-components';
 
 export const Layout = () => {
   return (
-    <Container>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <Header>
         <nav>
-          <Link to="/" end>
-            Home
-          </Link>
-          <Link to="/movies">Movies</Link>
+          <StyledNavLink to="/">Home</StyledNavLink>
+          <StyledNavLink to="/movies">Movies</StyledNavLink>
         </nav>
       </Header>
-
-      <Suspense fallback={<Loader />}>
-        <Outlet />
-      </Suspense>
-    </Container>
+      <Container>
+        <Suspense fallback={<Loader />}>
+          <Outlet />
+        </Suspense>
+        <ToastContainer autoClose={1500} hideProgressBar={true} />
+      </Container>
+    </ThemeProvider>
   );
 };
